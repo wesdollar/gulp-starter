@@ -1,0 +1,56 @@
+@each $side in top, bottom {
+
+  .gutter-#{$side} {
+    margin-#{$side}: $gutter;
+  }
+
+  .gutter-#{$side}-2x {
+    margin-#{$side}: $gutter * 2;
+  }
+
+  .half-gutter-#{$side} {
+    margin-#{$side}: $gutter / 2;
+  }
+
+  .quarter-gutter-#{$side} {
+    margin-#{$side}: $gutter / 4;
+  }
+
+  .small-gutter-#{$side} {
+    margin-#{$side}: $small-gutter;
+  }
+
+  @include media-breakpoint-down(sm) {
+    .sm-gutter-#{$side} {
+      margin-#{$side}: $gutter;
+    }
+
+    .sm-half-gutter-#{$side} {
+      margin-#{$side}: $gutter / 2;
+    }
+
+    .sm-quarter-gutter-#{$side} {
+      margin-#{$side}: $gutter / 4;
+    }
+
+    .sm-small-gutter-#{$side} {
+      margin-#{$side}: $small-gutter;
+    }
+  }
+}
+
+.align-right {
+  text-align: right;
+}
+
+.auto-center {
+  margin: 0 auto;
+}
+
+.display-block {
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
